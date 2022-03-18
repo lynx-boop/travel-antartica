@@ -1,0 +1,7 @@
+// сбрасывает стили у списков, избавляет от буллетов
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

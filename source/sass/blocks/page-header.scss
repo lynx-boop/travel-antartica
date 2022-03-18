@@ -1,0 +1,25 @@
+.page-header {
+    padding: 35px 0px 35px 0px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey-50; //FIXME: не меняется цвет, почему?
+    background-color: $blue-900;
+}
+
+.page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-header__logo {
+    width: 70px;
+    height: 38px;
+}
+
+// .page-header__back-img {
+//     position: absolute;
+//     z-index: -1;
+//     top: -50px;
+//     left: -155px;
+//     width: 100%;
+// }

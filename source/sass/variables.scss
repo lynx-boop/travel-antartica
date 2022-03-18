@@ -8,6 +8,7 @@ $default-font: "Arial", sans-serif;
 $black: #000000;
 $white: #ffffff;
 $grey-50: #f9fbfd;
+$blue-50: #e3ecf6;
 $blue-900: #011c40;
 
 //viewports
@@ -15,3 +16,6 @@ $blue-900: #011c40;
 $desktop-width: 1280px;
 $tablet-width: 768px;
 $mobile-width-only: 767px;
+
+$retina-dppx: 1.5dppx;
+$retina-dpi: 144dpi;

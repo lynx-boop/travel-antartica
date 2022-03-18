@@ -1,0 +1,26 @@
+.travel {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.travel__description {
+    padding: 60px 90px 60px 0px;
+}
+
+.travel__h2 {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+.travel__text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.travel__img {
+    min-width: 560px;
+}

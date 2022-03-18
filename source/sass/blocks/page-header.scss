@@ -9,9 +9,10 @@
 .page-header__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.page-header__logo {
+.page-header__logo-img {
     width: 70px;
     height: 38px;
 }

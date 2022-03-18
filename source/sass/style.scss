@@ -3,9 +3,9 @@
 @import "variables.scss";
 @import "global.scss";
 @import "fonts.scss";
-@import "list-reset.scss";
 
 //Blocks
+@import "blocks/list-reset.scss";
 @import "blocks/page-body.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-header-menu.scss";
@@ -13,3 +13,6 @@
 @import "blocks/main.scss";
 @import "blocks/travel.scss";
 @import "blocks/page-main.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-footer-menu.scss";
+@import "blocks/social.scss";

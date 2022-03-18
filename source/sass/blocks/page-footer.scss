@@ -1,0 +1,21 @@
+.page-footer {
+    background-color: $blue-900;
+    padding: 63px 0px;
+}
+
+.page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-footer__nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.page-footer__logo-img {
+    margin-right: 7px;
+    width: 70px;
+    height: 38px;
+}

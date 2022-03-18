@@ -21,8 +21,8 @@
 <body class="page-body">
     <header class="page-header">
         <div class="page-header__wrapper wrapper">
-            <a href="index.html" class="page-header__logo">
-                <svg>
+            <a href="index.html" class="page-header__logo-link">
+                <svg class="page-header__logo-img">
                     <use xlink:href="img/sprite.svg#logo"></use>
                 </svg>
             </a>
@@ -30,10 +30,10 @@
             <!--FIXME не меняет цвет!-->
             <nav class="page-header__menu page-header-menu">
                 <ul class="page-header-menu__list list-reset">
-                    <li class="bene"><a href="#benefits">Преимущества</a></li>
-                    <li><a href="#directions">Направления</a></li>
-                    <li><a href="#nearest">Ближайшие круизы</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a class="page-header-menu__link" href="#benefits">Преимущества</a></li>
+                    <li><a class="page-header-menu__link" href="#directions">Направления</a></li>
+                    <li><a class="page-header-menu__link" href="#nearest">Ближайшие круизы</a></li>
+                    <li><a class="page-header-menu__link" href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
         </div>
@@ -151,42 +151,50 @@
 
     <footer class="page-footer">
 
-        <a href="index.html" class="page-header__logo">
-            <img src="img/icons/logo.svg" alt="Логотип Круизы в Антарктиду">
-        </a>
-
-        <section class="page-footer__menu page-footer-menu">
-            <ul class="page-footer-menu__list list-reset">
-                <li><a href="#benefits">Преимущества</a></li>
-                <li><a href="#directions">Направления</a></li>
-                <li><a href="#nearest">Ближайшие круизы</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-            </ul>
-        </section>
-
-        <section class="page-footer__social social">
-            <ol class="social__list list-reset">
-                <li>
-                    <a href="#fb">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#fb"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#instagram">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#inst"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <svg>
-                        <use xlink:href="img/sprite.svg#twitter"></use>
+        <div class="page-footer__wrapper wrapper">
+            <div class="page-footer__nav-container">
+                <a class="page-footer__logo-link" href="index.html">
+                    <svg class="page-footer__logo-img">
+                        <use xlink:href="img/sprite.svg#logo"></use>
                     </svg>
-                </li>
-            </ol>
-        </section>
+                </a>
+
+                <section class="page-footer__menu page-footer-menu">
+                    <ul class="page-footer-menu__list list-reset">
+                        <li><a class="page-footer-menu__link" href="#benefits">Преимущества</a></li>
+                        <li><a class="page-footer-menu__link" href="#directions">Направления</a></li>
+                        <li><a class="page-footer-menu__link" href="#nearest">Ближайшие круизы</a></li>
+                        <li><a class="page-footer-menu__link" href="#contacts">Контакты</a></li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="page-footer__social social">
+                <ol class="social__list list-reset">
+                    <li>
+                        <a class="social__link" href="#fb">
+                            <svg class="social__img social__img--fb">
+                                <use xlink:href="img/sprite.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social__link" href="#instagram">
+                            <svg class="social__img social__img--inst">
+                                <use xlink:href="img/sprite.svg#inst"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social__link" href="#twitter">
+                            <svg class="social__img social__img--twitter">
+                                <use xlink:href="img/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ol>
+            </section>
+        </div>
     </footer>
 
 </body>

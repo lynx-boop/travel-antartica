@@ -5,7 +5,7 @@
     padding: 30px;
     display: grid;
     grid-template-rows: 32px auto auto;
-    align-items: flex-center;
+    align-items: center;
     grid-row-gap: 20px;
 
     &:not(:first-child) {

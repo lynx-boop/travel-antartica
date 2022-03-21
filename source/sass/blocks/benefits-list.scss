@@ -1,0 +1,27 @@
+.benefits-list__item {
+    box-sizing: content-box;
+    width: 360px;
+    background-color: $grey-50;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 32px auto auto;
+    align-items: flex-center;
+    grid-row-gap: 20px;
+
+    &:not(:first-child) {
+        margin-left: 40px;
+    }
+}
+
+.benefits-list__h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+}
+
+.benefits-list__p {
+    font-size: 14px;
+    line-height: 20px;
+}

@@ -1,11 +1,12 @@
 .travel {
     display: flex;
+    align-items: center;
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
 .travel__description {
-    padding: 60px 90px 60px 0px;
+    padding: 66px 90px 60px 0px;
 }
 
 .travel__h2 {
@@ -22,5 +23,6 @@
 }
 
 .travel__img {
+    background-color: $blue-50;
     min-width: 560px;
 }

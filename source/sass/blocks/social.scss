@@ -1,23 +1,9 @@
 .social__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .social__img {
     margin-left: 33px;
-
-    &--fb {
-        width: 11px;
-        height: 20px;
-    }
-
-    &--inst {
-        width: 20px;
-        height: 20px;
-    }
-
-    &--twitter {
-        width: 20px;
-        height: 16px;
-    }
 }

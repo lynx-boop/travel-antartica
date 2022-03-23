@@ -1,9 +1,9 @@
 .page-header {
+    position: relative;
     padding: 35px 0px 35px 0px;
     font-size: 16px;
     line-height: 20px;
     color: $grey-50; //FIXME: не меняется цвет, почему?
-    background-color: $blue-900;
 }
 
 .page-header__wrapper {
@@ -12,7 +12,16 @@
     align-items: center;
 }
 
-.page-header__back-img {
+.page-header__back-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 650px;
+    object-fit: cover;
+    object-position: center center;
+    z-index: -1;
     background-size: auto auto;
     background-position: 50% 50%;
+    background-color: $blue-900;
+    min-width: 100%;
 }

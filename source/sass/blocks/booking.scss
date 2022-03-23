@@ -1,0 +1,47 @@
+.booking {
+    background-color: $blue-50;
+    background-image: url("../img/desktop/booking-back_desk.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/desktop/booking-back_desk@2x.jpg");
+    }
+}
+
+.booking__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 60px 50px 60px;
+}
+
+.booking__h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.booking__appeal-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.booking__card-text {
+    margin-bottom: 27px;
+    color: $grey-50;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.booking__card {
+    flex-shrink: 0;
+    align-items: center;
+    width: 403px;
+    padding: 44px 50px 50px 50px;
+    background-color: $blue-900;
+}

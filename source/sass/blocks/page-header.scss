@@ -12,10 +12,7 @@
     align-items: center;
 }
 
-// .page-header__back-img {
-//     position: absolute;
-//     z-index: -1;
-//     top: -50px;
-//     left: -155px;
-//     width: 100%;
-// }
+.page-header__back-img {
+    background-size: auto auto;
+    background-position: 50% 50%;
+}

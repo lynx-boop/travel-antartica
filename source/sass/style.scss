@@ -5,6 +5,7 @@
 @import "fonts.scss";
 
 //Blocks
+@import "blocks/visually-hidden.scss";
 @import "blocks/list-reset.scss";
 @import "blocks/page-body.scss";
 @import "blocks/page-header.scss";
@@ -18,3 +19,8 @@
 @import "blocks/social.scss";
 @import "blocks/benefits.scss";
 @import "blocks/benefits-list.scss";
+@import "blocks/cruises.scss";
+@import "blocks/cruises-list.scss";
+@import "blocks/button.scss";
+@import "blocks/booking.scss";
+@import "blocks/booking-form.scss";

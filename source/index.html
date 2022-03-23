@@ -42,12 +42,19 @@
         <picture class="page-header__back-img">
             <source type="image/webp" media="(min-width: 1024px)"
                 srcset="img/desktop/header_img_desk.webp 1x, img/desktop/header_img_desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/tablet/header-img_tab.webp 1x, img/tablet/header-img_tab@2x.webp 2x">
+            <source type="image/webp" srcset="img/mobile/header-img_mob.webp 1x, img/mobile/header-img_mob@2x.webp 2x">
 
             <!-- 1х: 1366px; 2x: 2732px -->
             <source media="(min-width: 1024px)"
                 srcset="img/desktop/header_img_desk.jpg 1x, img/desktop/header_img_desk@2x.jpg 2x">
-
-            <img src="img/desktop/astor.jpg">
+            <!-- 1х: 768px; 2x: 1536px -->
+            <source media="(min-width: 768px)"
+                srcset="img/tablet/header_img_tab.jpg 1x, img/tablet/header_img_tab@2x.jpg 2x">
+            <!-- 1х: 320px; 2x: 640px -->
+            <img src="img/tablet/header_img_tab.jpg" srcset="img/mob/header_img_mob@2x.jpg 2x"
+                alt="Типичный пейзаж Антарктики" width="320" height="500">
         </picture>
     </header>
 
@@ -76,8 +83,20 @@
                 <picture class="travel__img">
                     <source type="image/webp" media="(min-width: 1024px)"
                         srcset="img/desktop/penguins_desk.webp 1x, img/desktop/penguins_desk@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/tablet/penguins_tab.webp 1x, img/tablet/penguins_tab@2x.webp 2x">
+                    <source type="image/webp"
+                        srcset="img/mobile/penguins_mob.webp 1x, img/mobile/penguins_mob@2x.webp 2x">
 
-                    <img src="img/desktop/penguins_desk.jpg" alt="Пингвины Антарктиды">
+                    <!-- 1х: 560px; 2x: 1120px -->
+                    <source media="(min-width: 1024px)"
+                        srcset="img/desktop/penguins_desk.jpg 1x, img/penguins_desk@2x.jpg 2x">
+                    <!-- 1х: 324px; 2x: 648px -->
+                    <source media="(min-width: 768px)"
+                        srcset="img/tablet/penguins_tab.jpg 1x, img/tablet/penguins_tab@2x.jpg 2x">
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <img src="img/mobile/penguins_mob.jpg" srcset="img/mobile/penguins_mob@2x.jpg 2x"
+                        alt="3 антарктических пингвина в естественной среде обитания" width="290" height="186">
                 </picture>
             </section>
         </div>
@@ -181,16 +200,23 @@
                             <a href="#" class="cruises-list__button button" target="_blank">Забронировать</a>
                         </div>
 
-                        <!-- FIXME поправить размеры на переменные во всех пикчах! -->
                         <picture>
                             <source type="image/webp" media="(min-width: 1024px)"
                                 srcset="img/desktop/astoria_desk.webp 1x, img/desktop/astoria_desk@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="img/tablet/astoria_tab.webp 1x, img/tablet/astoria_tab@2x.webp 2x">
+                            <source type="image/webp"
+                                srcset="img/mobile/astoria_mob.webp 1x, img/mobile/astoria_mob@2x.webp 2x">
 
                             <!-- 1х: 260px; 2x: 520px -->
                             <source media="(min-width: 1024px)"
                                 srcset="img/desktop/astoria_desk.jpg 1x, img/desktop/astoria_desk@2x.jpg 2x">
-
-                            <img src="img/desktop/astoria_desk.jpg">
+                            <!-- 1х: 309px; 2x: 618px -->
+                            <source media="(min-width: 768px)"
+                                srcset="img/tablet/astoria_tab.jpg 1x, img/tablet/astoria_tab@2x.jpg 2x">
+                            <!-- 1х: 270px; 2x: 540px -->
+                            <img src="img/mobile/astoria_mob.jpg" srcset="img/mobile/astoria_mob@2x.jpg 2x"
+                                alt="Круиз Астория" width="270" height="386">
                         </picture>
                     </li>
 
@@ -230,14 +256,23 @@
                             <a href="#" class="cruises-list__button button" target="_blank">Забронировать</a>
                         </div>
 
+                        <!-- FIXME сделать картинку элайну из миниона-1 -->
                         <picture>
                             <source type="image/webp" media="(min-width: 1024px)"
-                                srcset="img/desktop/minion-1_desk.webp 1x, img/desktop/minion-1_desk@2x.webp 2x">
+                                srcset="img/desktop/aline_desk.webp 1x, img/desktop/aline_desk@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="img/tablet/aline_tab.webp 1x, img/tablet/aline_tab@2x.webp 2x">
+                            <source type="image/webp"
+                                srcset="img/mobile/aline_mob.webp 1x, img/mobile/aline_mob@2x.webp 2x">
 
                             <!-- 1х: 260px; 2x: 520px -->
-                            <source media="(min-width: 1024px)" srcset="img/aline_desk.jpg 1x, img/aline_desk.jpg 2x">
-
-                            <img src="img/desktop/minion-1_desk.jpg" srcset="img/desktop/minion-1__desk@2x.jpg 2x"
+                            <source media="(min-width: 1024px)"
+                                srcset="img/desktop/aline_desk.jpg 1x, img/desktop/aline_desk@2x.jpg 2x">
+                            <!-- 1х: 309px; 2x: 618px -->
+                            <source media="(min-width: 768px)"
+                                srcset="img/tablet/aline_tab.jpg 1x, img/tablet/aline_tab@2x.jpg 2x">
+                            <!-- 1х: 270px; 2x: 540px -->
+                            <img src="img/mobile/aline_mob.jpg" srcset="img/mobile/aline_mob@2x.jpg 2x"
                                 alt="Круиз Элайн" width="270" height="386">
                         </picture>
                     </li>
@@ -276,17 +311,24 @@
                             <a href="#" class="cruises-list__button button" target="_blank">Забронировать</a>
                         </div>
 
-                        <!-- FIXME поправить размеры на переменные во всех пикчах! -->
                         <picture>
                             <source type="image/webp" media="(min-width: 1024px)"
                                 srcset="img/desktop/atlantis_desk.webp 1x, img/desktop/atlantis_desk@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="img/tablet/atlantis_tab.webp 1x, img/tablet/atlantis_tab@2x.webp 2x">
+                            <source type="image/webp"
+                                srcset="img/mobile/atlantis_mob.webp 1x, img/mobile/atlantis_mob@2x.webp 2x">
 
                             <!-- 1х: 260px; 2x: 520px -->
                             <source media="(min-width: 1024px)"
                                 srcset="img/desktop/atlantis_desk.jpg 1x, img/desktop/atlantis_desk@2x.jpg 2x">
+                            <!-- 1х: 309px; 2x: 618px -->
+                            <source media="(min-width: 768px)"
+                                srcset="img/tablet/atlantis_tab.jpg 1x, img/tablet/atlantis_tab@2x.jpg 2x">
+                            <!-- 1х: 270px; 2x: 540px -->
+                            <img src="img/mobile/atlantis_mob.jpg" srcset="img/mobile/atlantis_mob@2x.jpg 2x"
+                                alt="Круиз Атлантис" width="270" height="386">
                         </picture>
-
-                        <img src="img/desktop/atlantis_desk.jpg">
                     </li>
 
                     <li class="cruises-list__item">
@@ -323,18 +365,23 @@
                             <a href="#" class="cruises-list__button button" target="_blank">Забронировать</a>
                         </div>
 
-
-
-                        <!-- FIXME поправить размеры на переменные во всех пикчах! -->
                         <picture>
                             <source type="image/webp" media="(min-width: 1024px)"
                                 srcset="img/desktop/odissey_desk.webp 1x, img/desktop/odissey_desk@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="img/tablet/odissey_tab.webp 1x, img/tablet/odissey_tab@2x.webp 2x">
+                            <source type="image/webp"
+                                srcset="img/mobile/odissey_mob.webp 1x, img/mobile/odissey_mob@2x.webp 2x">
 
                             <!-- 1х: 260px; 2x: 520px -->
                             <source media="(min-width: 1024px)"
                                 srcset="img/desktop/odissey_desk.jpg 1x, img/desktop/odissey_desk@2x.jpg 2x">
-
-                            <img src="img/desktop/odissey_desk.jpg">
+                            <!-- 1х: 309px; 2x: 618px -->
+                            <source media="(min-width: 768px)"
+                                srcset="img/tablet/odissey_tab.jpg 1x, img/tablet/odissey_tab@2x.jpg 2x">
+                            <!-- 1х: 270px; 2x: 540px -->
+                            <img src="img/mobile/odissey_mob.jpg" srcset="img/mobile/odissey_mob@2x.jpg 2x"
+                                alt="Круиз Одиссей" width="270" height="386">
                         </picture>
                     </li>
 
@@ -372,16 +419,23 @@
                             <a href="#" class="cruises-list__button button" target="_blank">Забронировать</a>
                         </div>
 
-                        <!-- FIXME поправить размеры на переменные во всех пикчах! -->
                         <picture>
                             <source type="image/webp" media="(min-width: 1024px)"
                                 srcset="img/desktop/olimpy_desk.webp 1x, img/desktop/olimpy_desk@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="img/tablet/olimpy_tab.webp 1x, img/tablet/olimpy_tab@2x.webp 2x">
+                            <source type="image/webp"
+                                srcset="img/mobile/olimpy_mob.webp 1x, img/mobile/olimpy_mob@2x.webp 2x">
 
                             <!-- 1х: 260px; 2x: 520px -->
                             <source media="(min-width: 1024px)"
                                 srcset="img/desktop/olimpy_desk.jpg 1x, img/desktop/olimpy_desk@2x.jpg 2x">
-
-                            <img src="img/desktop/olimpy_desk.jpg">
+                            <!-- 1х: 309px; 2x: 618px -->
+                            <source media="(min-width: 768px)"
+                                srcset="img/tablet/olimpy_tab.jpg 1x, img/tablet/olimpy_tab@2x.jpg 2x">
+                            <!-- 1х: 270px; 2x: 540px -->
+                            <img src="img/mobile/olimpy_mob.jpg" srcset="img/mobile/olimpy_mob@2x.jpg 2x"
+                                alt="Круиз Олимпия" width="270" height="386">
                         </picture>
                     </li>
 
@@ -419,16 +473,23 @@
                             <a href="#" class="cruises-list__button button" target="_blank">Забронировать</a>
                         </div>
 
-                        <!-- FIXME поправить размеры на переменные во всех пикчах! -->
                         <picture>
                             <source type="image/webp" media="(min-width: 1024px)"
                                 srcset="img/desktop/aurora_desk.webp 1x, img/desktop/aurora_desk@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="img/tablet/aurora_tab.webp 1x, img/tablet/aurora_tab@2x.webp 2x">
+                            <source type="image/webp"
+                                srcset="img/mobile/aurora_mob.webp 1x, img/mobile/aurora_mob@2x.webp 2x">
 
                             <!-- 1х: 260px; 2x: 520px -->
                             <source media="(min-width: 1024px)"
                                 srcset="img/desktop/aurora_desk.jpg 1x, img/desktop/aurora_desk@2x.jpg 2x">
-
-                            <img src="img/desktop/aurora_desk.jpg">
+                            <!-- 1х: 309px; 2x: 618px -->
+                            <source media="(min-width: 768px)"
+                                srcset="img/tablet/aurora_tab.jpg 1x, img/tablet/aurora_tab@2x.jpg 2x">
+                            <!-- 1х: 270px; 2x: 540px -->
+                            <img src="img/mobile/aurora_mob.jpg" srcset="img/mobile/aurora_mob@2x.jpg 2x"
+                                alt="Круиз Аврора" width="270" height="386">
                         </picture>
                     </li>
 
@@ -466,16 +527,23 @@
                             <a href="#" class="cruises-list__button button" target="_blank">Забронировать</a>
                         </div>
 
-                        <!-- FIXME поправить размеры на переменные во всех пикчах! -->
                         <picture>
                             <source type="image/webp" media="(min-width: 1024px)"
                                 srcset="img/desktop/leonor_desk.webp 1x, img/desktop/leonor_desk@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="img/tablet/leonor_tab.webp 1x, img/tablet/leonor_tab@2x.webp 2x">
+                            <source type="image/webp"
+                                srcset="img/mobile/leonor_mob.webp 1x, img/mobile/leonor_mob@2x.webp 2x">
 
                             <!-- 1х: 260px; 2x: 520px -->
                             <source media="(min-width: 1024px)"
                                 srcset="img/desktop/leonor_desk.jpg 1x, img/desktop/leonor_desk@2x.jpg 2x">
-
-                            <img src="img/desktop/leonor_desk.jpg">
+                            <!-- 1х: 309px; 2x: 618px -->
+                            <source media="(min-width: 768px)"
+                                srcset="img/tablet/leonor_tab.jpg 1x, img/tablet/leonor_tab@2x.jpg 2x">
+                            <!-- 1х: 270px; 2x: 540px -->
+                            <img src="img/mobile/leonor_mob.jpg" srcset="img/mobile/leonor_mob@2x.jpg 2x"
+                                alt="Круиз Леонор" width="270" height="386">
                         </picture>
                     </li>
 
@@ -513,16 +581,23 @@
                             <a href="#" class="cruises-list__button button" target="_blank">Забронировать</a>
                         </div>
 
-                        <!-- FIXME поправить размеры на переменные во всех пикчах! -->
                         <picture>
                             <source type="image/webp" media="(min-width: 1024px)"
                                 srcset="img/desktop/minion-1_desk.webp 1x, img/desktop/minion-1_desk@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)"
+                                srcset="img/tablet/minion-1_tab.webp 1x, img/tablet/minion-1_tab@2x.webp 2x">
+                            <source type="image/webp"
+                                srcset="img/mobile/minion-1_mob.webp 1x, img/mobile/minion-1_mob@2x.webp 2x">
 
                             <!-- 1х: 260px; 2x: 520px -->
                             <source media="(min-width: 1024px)"
                                 srcset="img/desktop/minion-1_desk.jpg 1x, img/desktop/minion-1_desk@2x.jpg 2x">
-
-                            <img src="img/desktop/minion-1_desk.jpg">
+                            <!-- 1х: 309px; 2x: 618px -->
+                            <source media="(min-width: 768px)"
+                                srcset="img/tablet/minion-1_tab.jpg 1x, img/tablet/minion-1_tab@2x.jpg 2x">
+                            <!-- 1х: 270px; 2x: 540px -->
+                            <img src="img/mobile/minion-1_mob.jpg" srcset="img/mobile/minion-1_mob@2x.jpg 2x"
+                                alt="Круиз Минион-1" width="270" height="386">
                         </picture>
                     </li>
                 </ul>

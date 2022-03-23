@@ -22,7 +22,18 @@
     font-weight: 400;
 }
 
-.travel__img {
-    background-color: $blue-50;
+.travel__img img {
     min-width: 560px;
+    height: 301px;
+    background-color: $blue-50;
+
+    @media (max-width: $desktop_width) {
+        min-width: 324px;
+        height: 264px;
+    }
+
+    @media (max-width: $tablet_width) {
+        min-width: 290px;
+        height: 186px;
+    }
 }

@@ -24,4 +24,14 @@
     background-position: 50% 50%;
     background-color: $blue-900;
     min-width: 100%;
+
+    @media (max-width: $desktop_width) {
+        height: 638px;
+        object-position: center top;
+    }
+
+    @media (max-width: $tablet_width) {
+        height: 500px;
+        object-position: center 75%;
+    }
 }

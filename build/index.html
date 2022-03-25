@@ -256,7 +256,6 @@
                             <a href="#" class="cruises-list__button button" target="_blank">Забронировать</a>
                         </div>
 
-                        <!-- FIXME сделать картинку элайну из миниона-1 -->
                         <picture>
                             <source type="image/webp" media="(min-width: 1024px)"
                                 srcset="img/desktop/aline_desk.webp 1x, img/desktop/aline_desk@2x.webp 2x">
@@ -677,9 +676,20 @@
                     <picture class="contacts-map__img">
                         <source type="image/webp" media="(min-width: 1024px)"
                             srcset="img/desktop/map_desk.webp 1x, img/desktop/map_desk@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)"
+                            srcset="img/desktop/map_desk.webp 1x, img/desktop/map_desk@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="img/desktop/map_desk.webp 1x, img/desktop/map_desk@2x.webp 2x">
 
-                        <img src="img/desktop/map_desk.jpg" srcset="img/desktop/map_desk@2x.jpg 2x" alt="Гугл карта"
-                            width="560" height="306">
+                        <!-- 1х: 560px; 2x: 1120px -->
+                        <source media="(min-width: 1024px)"
+                            srcset="img/desktop/map_desk.jpg 1x, img/desktop/map_desk@2x.jpg 2x">
+                        <!-- 1х: 324px; 2x: 648px -->
+                        <source media="(min-width: 768px)"
+                            srcset="img/tablet/map_tab.jpg 1x, img/tablet/map_tab@2x.jpg 2x">
+                        <!-- 1х: 290px; 2x: 580px -->
+                        <img src="img/mobile/map_mob.jpg" srcset="img/mobile/map_mob@2x.jpg 2x" alt="Яндекс карта"
+                            width="290" height="316">
                     </picture>
 
                     <svg class="contacts-map__pin" width="18" height="22" role="img">

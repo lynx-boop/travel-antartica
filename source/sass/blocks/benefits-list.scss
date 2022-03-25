@@ -11,7 +11,7 @@
     padding: 30px;
     display: grid;
     grid-template-rows: 32px auto auto;
-    align-items: center;
+    align-items: baseline;
     grid-row-gap: 20px;
 
     &:not(:first-child) {

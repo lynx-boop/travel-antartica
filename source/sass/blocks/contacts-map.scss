@@ -5,11 +5,31 @@
     height: 306px;
     overflow: hidden;
     cursor: pointer;
+
+    @media (max-width: $desktop_width) {
+        width: 324px;
+        height: 335px;
+    }
+
+    @media (max-width: $tablet_width) {
+        width: 290px;
+        height: 316px;
+    }
 }
 
 .contacts-map__iframe {
     width: 560px;
     height: 306px;
+
+    @media (max-width: $desktop_width) {
+        width: 324px;
+        height: 335px;
+    }
+
+    @media (max-width: $tablet_width) {
+        width: 290px;
+        height: 316px;
+    }
 }
 
 .contacts-map__img {

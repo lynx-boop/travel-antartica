@@ -1,34 +1,34 @@
 .benefits {
     padding: 120px 0px 120px 0px;
     background-color: $blue-50;
-    // background-image: url("../img/desktop/benefits_desk.jpg");
+    background-image: url("../img/desktop/benefits_desk.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 
-    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    //     background-image: url("../img/desktop/benefits_desk@2x.jpg");
-    // }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/desktop/benefits_desk@2x.jpg");
+    }
 
-    // @media (max-width: $tablet_width) {
-    //     padding: 89px 0 70px 0;
+    @media (max-width: $tablet_width) {
+        padding: 89px 0 70px 0;
 
-    //     background-image: url("../img/tablet/benefits_tab.jpg");
+        background-image: url("../img/tablet/benefits_tab.jpg");
 
-    //     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    //         background-image: url("../img/tablet/benefits_tab@2x.jpg");
-    //     }
-    // }
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url("../img/tablet/benefits_tab@2x.jpg");
+        }
+    }
 
-    // @media (max-width: $mobile-width-only) {
-    //     padding: 58px 0 34px 0;
+    @media (max-width: $mobile-width-only) {
+        padding: 58px 0 34px 0;
 
-    //     background-image: url("../img/mobile/benefits_mob.jpg");
+        background-image: url("../img/mobile/benefits_mob.jpg");
 
-    //     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    //         background-image: url("../img/mobile/benefits_mob@2x.jpg");
-    //     }
-    // }
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url("../img/mobile/benefits_mob@2x.jpg");
+        }
+    }
 }
 
 .benefits__h2 {

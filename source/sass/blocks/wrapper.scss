@@ -3,11 +3,11 @@
     margin: 0 auto;
     width: 100%;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $desktop_width) {
         padding: 0 45px;
     }
 
-    @media (max-width: $mobile-width-only) {
+    @media (max-width: $tablet_width) {
         padding: 0 15px;
     }
 }

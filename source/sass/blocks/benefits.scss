@@ -20,8 +20,8 @@
         }
     }
 
-    @media (max-width: $mobile-width-only) {
-        padding: 58px 0 34px 0;
+    @media (max-width: $tablet-width) {
+        padding: 65px 0 65px 0;
 
         background-image: url("../img/mobile/benefits_mob.jpg");
 
@@ -37,4 +37,10 @@
     font-size: 28px;
     line-height: 42px;
     font-weight: 600;
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 40px;
+        font-size: 24px;
+        line-height: 36px;
+    }
 }

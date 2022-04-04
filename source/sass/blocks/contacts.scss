@@ -1,7 +1,17 @@
 .contacts__wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     column-gap: 100px;
     margin: 120px 0;
+
+    @media (max-width: $desktop-width) {
+        column-gap: 30px;
+        min-width: 324px;
+    }
+
+    @media (max-width: $tablet-width) {
+        flex-direction: column-reverse;
+        margin: 65px 0;
+        min-width: 320px;
+    }
 }

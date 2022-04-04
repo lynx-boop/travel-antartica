@@ -2,6 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: $tablet_width) {
+        justify-content: center;
+    }
 }
 
 .cruises-list__h3 {

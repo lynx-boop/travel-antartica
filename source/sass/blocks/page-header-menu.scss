@@ -1,3 +1,11 @@
+.page-header-menu {
+    flex-wrap: wrap;
+
+    @media (max-width: $tablet-width) {
+        display: none;
+    }
+}
+
 .page-header-menu__list {
     display: flex;
 }
@@ -5,4 +13,9 @@
 .page-header-menu__link {
     margin-left: 33px;
     color: $grey-50;
+    min-width: 100%;
+
+    @media (max-width: $tablet-width) {
+        margin-left: 23px;
+    }
 }

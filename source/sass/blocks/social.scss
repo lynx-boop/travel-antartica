@@ -6,4 +6,38 @@
 
 .social__img {
     margin-left: 33px;
+
+    @media (max-width: $desktop_width) {
+        margin-left: 23px;
+    }
+
+    &--fb {
+        width: 11px;
+        height: 22px;
+
+        @media (max-width: $desktop_width) {
+            width: 9px;
+            height: 16px;
+        }
+    }
+
+    &--inst {
+        width: 20px;
+        height: 20px;
+
+        @media (max-width: $desktop_width) {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &--twitter {
+        width: 20px;
+        height: 16px;
+
+        @media (max-width: $desktop_width) {
+            width: 16px;
+            height: 13px;
+        }
+    }
 }

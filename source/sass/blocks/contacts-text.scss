@@ -1,11 +1,29 @@
+.contacts-text {
+    @media (max-width: $tablet-width) {
+        margin-bottom: 43px;
+    }
+}
+
 .contacts-text__h3 {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 45px;
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 40px;
+    }
 }
 
 .contacts-text__p {
+    & br {
+        display: none;
+
+        @media (max-width: $desktop-width) {
+            display: block;
+        }
+    }
+
     &::before {
         content: url("../img/sprite.svg#pin");
     }

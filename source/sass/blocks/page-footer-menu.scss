@@ -1,8 +1,30 @@
 .page-footer-menu__list {
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+
+    @media (max-width: $tablet-width) {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 23px;
+        margin-bottom: 30px;
+    }
 }
 
 .page-footer-menu__link {
     margin-left: 33px;
     color: $grey-50;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (max-width: $desktop-width) {
+        margin-left: 23px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    @media (max-width: $tablet-width) {
+        margin: 0;
+    }
 }

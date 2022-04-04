@@ -15,6 +15,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 50px 60px 50px 60px;
+
+    @media (max-width: $desktop-width) {
+        flex-direction: column;
+    }
+
+    @media (max-width: $desktop-width) {
+        padding: 65px 0;
+    }
 }
 
 .booking__h2 {
@@ -22,24 +30,51 @@
     font-size: 40px;
     line-height: 60px;
     margin-bottom: 30px;
+
+    @media (max-width: $desktop-width) {
+        font-size: 34px;
+        line-height: 51px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: $tablet-width) {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
 }
 
 .booking__appeal {
     margin-right: 90px;
+
+    @media (max-width: $desktop-width) {
+        margin-right: 0px;
+        margin-bottom: 55px;
+    }
+
+    @media (max-width: $tablet-width) {
+        margin: 0 15px 40px 15px;
+    }
 }
 
 .booking__appeal-text {
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-}
 
-.booking__card-text {
-    margin-bottom: 27px;
-    color: $grey-50;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
+    @media (max-width: $desktop-width) {
+        text-align: center;
+    }
+
+    @media (max-width: $tablet-width) {
+        & br {
+            display: none;
+        }
+
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 
 .booking__card {
@@ -48,4 +83,23 @@
     width: 403px;
     padding: 44px 50px 50px 50px;
     background-color: $blue-900;
+
+    @media (max-width: $tablet-width) {
+        width: 290px;
+        padding: 40px;
+    }
+}
+
+.booking__card-text {
+    margin-bottom: 27px;
+    color: $grey-50;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 35px;
+        line-height: 25px;
+        text-align: center;
+    }
 }

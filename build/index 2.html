@@ -22,11 +22,8 @@
     <header class="page-header">
         <div class="page-header__wrapper wrapper">
             <a href="index.html" class="page-header__logo-link">
-                <svg class="page-header__logo-img" width="70" height="38" role="img">
-                    <use xlink:href="img/sprite.svg#logo"></use>
-                </svg>
+                <img class="page-header__logo-img" src="img/logo.svg" width="70" height="38" alt="Логотип компании">
             </a>
-
 
             <nav class="page-header__menu page-header-menu">
                 <ul class="page-header-menu__list list-reset">
@@ -36,6 +33,17 @@
                     <li><a class="page-header-menu__link" href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
+        </div>
+
+        <div class="page-header__burger">
+            <button class="page-header__toggle toggle" type="button" aria-label="Мобильное меню">
+                <svg class="toggle__icon toggle__icon--burger" width="24" height="20" role="img">
+                    <use xlink:href="img/sprite.svg#icon-burger"></use>
+                </svg>
+                <svg class="toggle__icon toggle__icon--close" width="13" height="13" role="img">
+                    <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
         </div>
 
 
@@ -61,7 +69,7 @@
 
     <main class="page-main">
         <section class="main">
-            <div class="wrapper">
+            <div class="main__wrapper">
                 <h1 class="main__h1">Круизы в Антарктику</h1>
                 <p class="main__text">Волшебный мир айсбергов и пингвинов</p>
             </div>
@@ -708,7 +716,7 @@
                             <use xlink:href="img/sprite.svg#pin"></use>
                         </svg> -->
                     <p class="contacts-text__p list-reset">
-                        г. Санкт Петербург, ул. Большая Конюшенная, 19/8
+                        г. Санкт Петербург,<br> ул. Большая Конюшенная, 19/8
                     </p>
 
                     <a class="contacts-text__tel" href="tel:88002000000" aria-label="Позвоните нам">
@@ -731,9 +739,7 @@
         <div class="page-footer__wrapper wrapper">
             <div class="page-footer__nav-container">
                 <a class="page-footer__logo-link" href="index.html">
-                    <svg class="page-footer__logo-img" width="70" height="38" role="img">
-                        <use xlink:href="img/sprite.svg#logo"></use>
-                    </svg>
+                    <img class="page-footer__logo-img" src="img/logo.svg" width="70" height="38" alt="Логотип компании">
                 </a>
 
                 <section class="page-footer__menu page-footer-menu">
@@ -750,23 +756,17 @@
                 <ol class="social__list list-reset">
                     <li>
                         <a class="social__link" href="#fb">
-                            <svg class="social__img social__img--fb" width="11" height="20" role="img">
-                                <use xlink:href="img/sprite.svg#fb"></use>
-                            </svg>
+                            <img class="social__img social__img--fb" src="img/fb.svg" width="11" height="20">
                         </a>
                     </li>
                     <li>
                         <a class="social__link" href="#instagram">
-                            <svg class="social__img social__img--inst" width="20" height="20" role="img">
-                                <use xlink:href="img/sprite.svg#inst"></use>
-                            </svg>
+                            <img class="social__img social__img--inst" src="img/inst.svg" width="20" height="20">
                         </a>
                     </li>
                     <li>
                         <a class="social__link" href="#twitter">
-                            <svg class="social__img social__img--twitter" width="20" height="16" role="img">
-                                <use xlink:href="img/sprite.svg#twitter"></use>
-                            </svg>
+                            <img class="social__img social__img--twitter" src="img/twitter.svg" width="20" height="16">
                         </a>
                     </li>
                 </ol>

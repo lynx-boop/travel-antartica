@@ -32,9 +32,14 @@ const html = () => gulp.src('source/*.html')
 
 // Scripts
 
-const scripts = () => gulp.src('source/js/script.js')
+const mainScript = () => gulp.src('source/js/main.js')
     .pipe(terser())
-    .pipe(rename('script.min.js'))
+    .pipe(rename('main.min.js'))
+    .pipe(gulp.dest('build/js'));
+
+const vendorScript = () => gulp.src('source/js/vendor.js')
+    .pipe(terser())
+    .pipe(rename('vendor.min.js'))
     .pipe(gulp.dest('build/js'));
 
 // Images
@@ -110,7 +115,8 @@ const reload = (done) => {
 
 const watcher = () => {
     gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-    gulp.watch('source/js/script.js', gulp.series(scripts));
+    gulp.watch('source/js/main.js', gulp.series(mainScript));
+    gulp.watch('source/js/vendor.js', gulp.series(vendorScript));
     gulp.watch('source/*.html', gulp.series(html, reload));
 };
 
@@ -123,7 +129,8 @@ export const build = gulp.series(
     gulp.parallel(
         styles,
         html,
-        scripts,
+        mainScript,
+        vendorScript,
         svg,
         sprite,
         createWebp,
@@ -139,7 +146,8 @@ export default gulp.series(
     gulp.parallel(
         styles,
         html,
-        scripts,
+        mainScript,
+        vendorScript,
         svg,
         sprite,
         createWebp,

@@ -1,5 +1,5 @@
 .benefits {
-    padding: 120px 0px 120px 0px;
+    padding: 110px 0px 110px 0px;
     background-color: $blue-50;
     background-image: url("../img/desktop/benefits_desk.jpg");
     background-repeat: no-repeat;
@@ -10,8 +10,8 @@
         background-image: url("../img/desktop/benefits_desk@2x.jpg");
     }
 
-    @media (max-width: $tablet_width) {
-        padding: 89px 0 70px 0;
+    @media (max-width: $desktop_width) {
+        padding: 100px 0;
 
         background-image: url("../img/tablet/benefits_tab.jpg");
 
@@ -33,7 +33,7 @@
 
 .benefits__h2 {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     font-size: 28px;
     line-height: 42px;
     font-weight: 600;

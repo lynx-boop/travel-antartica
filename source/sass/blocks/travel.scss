@@ -1,8 +1,13 @@
 .travel {
     display: flex;
     align-items: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 95px;
+    padding-bottom: 115px;
+
+    @media (max-width: $desktop-width) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
     @media (max-width: $tablet-width) {
         flex-direction: column;
@@ -12,7 +17,15 @@
 }
 
 .travel__description {
-    padding: 66px 90px 60px 0px;
+    padding: 80px 85px 60px 0px;
+
+    @media (max-width: $desktop-width) {
+        padding: 0 30px 0 0;
+
+        & br {
+            display: none;
+        }
+    }
 
     @media (max-width: $tablet-width) {
         padding: 0 0 40px 0;
@@ -23,7 +36,11 @@
     font-size: 28px;
     line-height: 42px;
     font-weight: 600;
-    padding-bottom: 40px;
+    margin-bottom: 25px;
+
+    @media (max-width: $desktop-width) {
+        margin-bottom: 30px;
+    }
 
     @media (max-width: $tablet-width) {
         font-size: 24px;
@@ -38,6 +55,7 @@
 }
 
 .travel__img img {
+    margin-top: 25px;
     min-width: 560px;
     height: 301px;
     background-color: $blue-50;

@@ -15,7 +15,7 @@
     display: grid;
     grid-template-rows: 32px auto auto;
     align-items: center;
-    grid-row-gap: 20px;
+    grid-row-gap: 15px;
 
     &:not(:first-child) {
         margin-left: 40px;

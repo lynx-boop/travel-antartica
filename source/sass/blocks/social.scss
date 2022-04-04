@@ -2,15 +2,14 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    column-gap: 33px;
+
+    @media (max-width: $desktop_width) {
+        column-gap: 23px;
+    }
 }
 
 .social__img {
-    margin-left: 33px;
-
-    @media (max-width: $desktop_width) {
-        margin-left: 23px;
-    }
-
     &--fb {
         width: 11px;
         height: 22px;

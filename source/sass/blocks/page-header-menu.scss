@@ -11,9 +11,15 @@
 }
 
 .page-header-menu__link {
-    margin-left: 33px;
+    margin-left: 35px;
     color: $grey-50;
     min-width: 100%;
+
+    @media (max-width: $desktop-width) {
+        margin-left: 25px;
+        font-size: 14px;
+        line-height: 17px;
+    }
 
     @media (max-width: $tablet-width) {
         margin-left: 23px;

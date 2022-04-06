@@ -5,8 +5,8 @@
     padding-bottom: 115px;
 
     @media (max-width: $desktop-width) {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 90px;
+        padding-bottom: 95px;
     }
 
     @media (max-width: $tablet-width) {
@@ -21,10 +21,6 @@
 
     @media (max-width: $desktop-width) {
         padding: 0 30px 0 0;
-
-        & br {
-            display: none;
-        }
     }
 
     @media (max-width: $tablet-width) {
@@ -38,8 +34,18 @@
     font-weight: 600;
     margin-bottom: 25px;
 
+    & br {
+        display: none;
+    }
+
     @media (max-width: $desktop-width) {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+        line-height: 36px;
+        font-size: 26px;
+
+        & br {
+            display: block;
+        }
     }
 
     @media (max-width: $tablet-width) {
@@ -52,6 +58,16 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
+
+    & br {
+        display: none;
+    }
+
+    @media (max-width: $desktop-width) {
+        & br {
+            display: block;
+        }
+    }
 }
 
 .travel__img img {
@@ -63,6 +79,7 @@
     @media (max-width: $desktop_width) {
         min-width: 324px;
         height: 264px;
+        margin-top: 10px;
     }
 
     @media (max-width: $tablet_width) {

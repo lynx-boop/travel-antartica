@@ -13,8 +13,8 @@
     background-color: $grey-50;
     padding: 30px;
     display: grid;
-    grid-template-rows: 32px auto auto;
-    align-items: center;
+    grid-template-rows: 40px auto;
+    align-items: flex-start;
     grid-row-gap: 15px;
 
     &:not(:first-child) {
@@ -22,7 +22,13 @@
     }
 
     @media (max-width: $desktop-width) {
-        padding: 25px 20px;
+        padding: 23px 20px;
+        padding-right: 10px;
+        grid-row-gap: 5px;
+
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
     }
 
     @media (max-width: $tablet-width) {
@@ -40,11 +46,62 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 10px;
+
+    @media (max-width: $desktop-width) {
+        margin-bottom: 7px;
+    }
 }
 
 .benefits-list__p {
     font-size: 14px;
     line-height: 20px;
+}
+
+.benefits-list__icon {
+    &--ship {
+        margin-top: 5px;
+
+        @media (max-width: $desktop-width) {
+            margin-top: 0;
+            width: 21px;
+            height: 26px;
+        }
+    }
+
+    &--ticks {
+        margin-top: 8px;
+
+        @media (max-width: $desktop-width) {
+            margin-top: 4px;
+            width: 33px;
+            height: 19px;
+        }
+    }
+
+    &--boat {
+        margin-top: 11px;
+
+        @media (max-width: $desktop-width) {
+            margin-top: 6px;
+            width: 38px;
+            height: 13px;
+        }
+    }
+}
+
+.benefits-list__desk-br {
+    display: block;
+
+    @media (max-width: $desktop-width) {
+        display: none;
+    }
+}
+
+.benefits-list__tab-br {
+    display: none;
+
+    @media (max-width: $desktop-width) {
+        display: block;
+    }
 }

@@ -11,7 +11,7 @@
     }
 
     @media (max-width: $desktop_width) {
-        padding: 100px 0;
+        padding: 90px 0 100px;
 
         background-image: url("../img/tablet/benefits_tab.jpg");
 
@@ -37,6 +37,11 @@
     font-size: 28px;
     line-height: 42px;
     font-weight: 600;
+
+    @media (max-width: $desktop-width) {
+        font-size: 26px;
+        line-height: 39px;
+    }
 
     @media (max-width: $tablet-width) {
         margin-bottom: 40px;

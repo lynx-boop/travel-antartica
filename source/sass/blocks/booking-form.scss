@@ -4,11 +4,14 @@
 }
 
 .booking-form input {
-    margin: 0 0 20px 0;
+    margin-bottom: 20px;
     padding: 11px 16px 11px 16px;
-
     border: none;
     border-radius: 0;
+
+    @media (max-width: $desktop-width) {
+        margin-bottom: 24px;
+    }
 }
 
 .booking-form input::placeholder {
@@ -52,6 +55,8 @@ input[type="checkbox"] {
         & ~ .booking-form__checkbox {
             & svg {
                 display: block;
+                width: 10px;
+                height: 6px;
             }
         }
     }

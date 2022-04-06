@@ -78,14 +78,18 @@
         <div class="wrapper">
             <section class="travel">
                 <div class="travel__description">
-                    <h2 class="travel__h2">Путешествие на край Земли</h2>
-                    <p class="travel__text">Это волшебное путешествие поможет вам познакомиться поближе с
-                        удивительным
-                        миром
-                        Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные
-                        айсберги,
-                        несколько видов пингвинов, китов,<br>
-                        морских котиков и многое другое.</p>
+                    <h2 class="travel__h2">
+                        Путешествие
+                        <br>
+                        на край Земли
+                    </h2>
+                    <p class="travel__text">Это волшебное путешествие поможет вам познакомиться поближе
+                        <br class="travel__tab-br">
+                        с удивительным миром Антарктики. Наш круизный лайнер отвезет вас
+                        <br class="travel__tab-br">
+                        на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов,<br>
+                        морских котиков и многое другое.
+                    </p>
                 </div>
 
                 <picture class="travel__img">
@@ -115,54 +119,66 @@
 
                 <ul class="benefits__list benefits-list list-reset">
                     <li class="benefits-list__item">
-                        <svg class="benefits-list__icon benefits-list__icon--ship" width="27" height="32" role="img">
+                        <svg class="benefits-list__icon benefits-list__icon--ship" width="27" height="32" role="img"
+                            viewbox="0 0 27 32">
                             <use xlink:href="img/sprite.svg#liner"></use>
                         </svg>
 
-                        <h3 class="benefits-list__h3">
-                            Небольшой круизный лайнер
-                        </h3>
-                        <p class="benefits-list__p">
-                            Круизный лайнер, рассчитанный всего
-                            лишь на 300 гостей, поможет избежать
-                            шума и очередей и даст возможность
-                            насладиться видами и природой.
-                        </p>
+                        <div class="benefits-list__container">
+                            <h3 class="benefits-list__h3">
+                                Небольшой круизный лайнер
+                            </h3>
+                            <p class="benefits-list__p">
+                                Круизный лайнер, рассчитанный всего
+                                лишь на 300 гостей, поможет избежать шума и очередей<br class="benefits-list__tab-br">
+                                и даст возможность насладиться видами<br class="benefits-list__tab-br">
+                                и природой.
+                            </p>
+                        </div>
                     </li>
 
                     <li class="benefits-list__item">
-                        <svg class="benefits-list__icon benefits-list__icon--ticks" width="38" height="21" role="img">
+                        <svg class="benefits-list__icon benefits-list__icon--ticks" width="38" height="21" role="img"
+                            viewbox="0 0 38 21">
                             <use xlink:href="img/sprite.svg#ticks"></use>
                         </svg>
 
-                        <h3 class="benefits-list__h3">
-                            Система все включено
-                        </h3>
-                        <p class="benefits-list__p">
-                            Все наши круизы работают<br>
-                            по системе “Все Включено”.<br>
-                            Великолепные блюда и безлимитный
-                            бар доступны для вас 24 часа.
-                        </p>
-
+                        <div class="benefits-list__container">
+                            <h3 class="benefits-list__h3">
+                                Система<br class="benefits-list__tab-br">
+                                все включено
+                            </h3>
+                            <p class="benefits-list__p">
+                                Все наши круизы работают<br class="benefits-list__desk-br">
+                                по системе “Все Включено”.<br class="benefits-list__desk-br">
+                                Великолепные блюда<br class="benefits-list__tab-br">
+                                и безлимитный бар доступны для вас<br class="benefits-list__tab-br">
+                                24 часа.
+                            </p>
+                        </div>
                     </li>
 
                     <li class="benefits-list__item">
-                        <svg class="benefits-list__icon benefits-list__icon--boat" width="42" height="15" role="img">
+                        <svg class="benefits-list__icon benefits-list__icon--boat" width="42" height="15" role="img"
+                            viewbox="0 0 42 15">
                             <use xlink:href="img/sprite.svg#boat"></use>
                         </svg>
 
-                        <!--FIXME откуда здесь высота 36?! Не понимаю, откуда она приходит-->
-                        <h3 class="benefits-list__h3">
-                            Экскурсионные туры на Zodiac
-                        </h3>
-                        <p class="benefits-list__p">
-                            Экскурсионные туры к берегам<br>
-                            Антарктиды совершаются<br>
-                            на оборудованных лодках типа<br>
-                            Zodiac в сопровождении<br>
-                            опытных экскурсоводов.
-                        </p>
+                        <div class="benefits-list__container">
+                            <!--FIXME откуда здесь высота 36?! Не понимаю, откуда она приходит-->
+                            <h3 class="benefits-list__h3">
+                                Экскурсионные туры на Zodiac
+                            </h3>
+                            <p class="benefits-list__p">
+                                Экскурсионные туры<br class="benefits-list__tab-br">
+                                к берегам Антарктиды совершаются<br class="benefits-list__desk-br">
+                                на оборудованных<br class="benefits-list__tab-br">
+                                лодках типа<br class="benefits-list__desk-br">
+                                Zodiac<br class="benefits-list__tab-br">
+                                в сопровождении<br class="benefits-list__desk-br">
+                                опытных экскурсоводов.
+                            </p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -648,7 +664,7 @@
                                     required aria-label="Выберете если согласны на обработку персональных данных."
                                     checked>
                                 <span class="booking-form__checkbox">
-                                    <svg width="10" height="6" role="img">
+                                    <svg width="10" height="6" role="img" viewbox="0 0 10 6">
                                         <use xlink:href="img/sprite.svg#tick"></use>
                                     </svg>
                                 </span>
@@ -708,24 +724,24 @@
                 <div class="contacts__text contacts-text">
                     <h3 class="contacts-text__h3 list-reset">
                         У вас ещё остались вопросы или сомнения?
-                        Приезжайте к нам в офис и мы вам все расскажем.
+                        Приезжайте к нам<br class="contacts-text__tab-br">
+                        в офис и мы вам все расскажем.
                     </h3>
 
-                    <!-- Попыталась положить в бефор, но оно не отображается
-                            <svg class="contacts-text__icon contacts-text__icon--pin" width="18" height="22" role="img">
-                            <use xlink:href="img/sprite.svg#pin"></use>
-                        </svg> -->
+                    <svg class="contacts-text__icon contacts-text__icon--pin" width="18" height="22" role="img">
+                        <use xlink:href="img/sprite.svg#pin"></use>
+                    </svg>
                     <p class="contacts-text__p list-reset">
                         г. Санкт Петербург,<br> ул. Большая Конюшенная, 19/8
                     </p>
 
                     <a class="contacts-text__tel" href="tel:88002000000" aria-label="Позвоните нам">
-                        <!-- <svg class="contacts-text__icon contacts-text__icon--phone" width="18" height="18" role="img">
+                        <svg class="contacts-text__icon contacts-text__icon--phone" width="18" height="18" role="img">
                             <use xlink:href="img/sprite.svg#tel"></use>
-                        </svg> -->
-                        <span>
+                        </svg>
+                        <p class="contacts-text__p">
                             8-800-200-00-00
-                        </span>
+                        </p>
                     </a>
                 </div>
             </div>

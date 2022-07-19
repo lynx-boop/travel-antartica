@@ -11,8 +11,8 @@
 
     @media (max-width: $tablet-width) {
         flex-direction: column;
-        padding-top: 65px;
-        padding-bottom: 65px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
@@ -24,7 +24,7 @@
     }
 
     @media (max-width: $tablet-width) {
-        padding: 0 0 40px 0;
+        padding: 0 0 24px 0;
     }
 }
 
@@ -34,18 +34,10 @@
     font-weight: 600;
     margin-bottom: 25px;
 
-    & br {
-        display: none;
-    }
-
     @media (max-width: $desktop-width) {
         margin-bottom: 15px;
         line-height: 36px;
         font-size: 26px;
-
-        & br {
-            display: block;
-        }
     }
 
     @media (max-width: $tablet-width) {
@@ -58,16 +50,6 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-
-    & br {
-        display: none;
-    }
-
-    @media (max-width: $desktop-width) {
-        & br {
-            display: block;
-        }
-    }
 }
 
 .travel__img img {
@@ -85,5 +67,25 @@
     @media (max-width: $tablet_width) {
         min-width: 290px;
         height: 186px;
+    }
+}
+
+.travel__tab-text-br {
+    display: none;
+
+    @media (max-width: $desktop_width) {
+        display: block;
+    }
+
+    @media (max-width: $tablet_width) {
+        display: none;
+    }
+}
+
+.travel__tab-h3-br {
+    display: none;
+
+    @media (max-width: $desktop_width) {
+        display: block;
     }
 }

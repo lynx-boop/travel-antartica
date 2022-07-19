@@ -13,6 +13,7 @@
     }
 
     @media (max-width: $tablet-width) {
+        margin-top: -70px;
         margin-left: 15px;
         min-height: 500px;
     }
@@ -33,7 +34,7 @@
     @media (max-width: $tablet-width) {
         font-size: 36px;
         line-height: 45px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
 
@@ -46,6 +47,11 @@
         font-size: 18px;
         line-height: 22px;
     }
+
+    @media (max-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 
 .main__wrapper {
@@ -54,4 +60,12 @@
     padding-left: 0;
     // @media (max-width: $desktop-width) {
     // }
+}
+
+.main__mob-br {
+    display: none;
+
+    @media (max-width: $tablet-width) {
+        display: block;
+    }
 }

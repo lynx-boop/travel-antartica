@@ -14,6 +14,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: stretch;
+        padding: 20px 0;
     }
 }
 
@@ -75,8 +76,8 @@
 .page-header__burger {
     display: none;
     position: absolute;
-    top: 25px;
-    right: 15px;
+    top: 23px;
+    right: 21px;
     justify-self: center;
 
     @media (max-width: $tablet-width) {

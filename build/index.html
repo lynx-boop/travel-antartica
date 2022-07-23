@@ -20,32 +20,6 @@
 
 <body class="page-body">
     <header class="page-header">
-        <div class="page-header__wrapper wrapper">
-            <a href="index.html" class="page-header__logo-link">
-                <img class="page-header__logo-img" src="img/logo.svg" width="70" height="38" alt="Логотип компании">
-            </a>
-
-            <nav class="page-header__menu page-header-menu">
-                <ul class="page-header-menu__list list-reset">
-                    <li><a class="page-header-menu__link" href="#benefits">Преимущества</a></li>
-                    <li><a class="page-header-menu__link" href="#directions">Направления</a></li>
-                    <li><a class="page-header-menu__link" href="#cruises">Ближайшие круизы</a></li>
-                    <li><a class="page-header-menu__link" href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="page-header__burger">
-            <button class="page-header__toggle toggle" type="button" aria-label="Мобильное меню">
-                <svg class="toggle__icon toggle__icon--burger" width="24" height="20" role="img">
-                    <use xlink:href="img/sprite.svg#icon-burger"></use>
-                </svg>
-                <svg class="toggle__icon toggle__icon--close" width="13" height="13" role="img">
-                    <use xlink:href="img/sprite.svg#icon-close"></use>
-                </svg>
-            </button>
-        </div>
-
 
         <picture class="page-header__back-img">
             <source type="image/webp" media="(min-width: 1024px)"
@@ -64,6 +38,48 @@
             <img src="img/mobile/header_img_mob.jpg" srcset="img/mob/header_img_mob@2x.jpg 2x"
                 alt="Типичный пейзаж Антарктики" width="320" height="500">
         </picture>
+
+        <div class="page-header__wrapper wrapper">
+            <a href="index.html" class="page-header__logo-link">
+                <img class="page-header__logo-img" src="img/logo.svg" width="70" height="38" alt="Логотип компании">
+            </a>
+
+            <nav class="page-header__menu page-header-menu">
+                <ul class="page-header-menu__list list-reset">
+                    <li><a class="page-header-menu__link" href="#benefits">Преимущества</a></li>
+                    <li><a class="page-header-menu__link" href="#directions">Направления</a></li>
+                    <li><a class="page-header-menu__link" href="#cruises">Ближайшие круизы</a></li>
+                    <li><a class="page-header-menu__link" href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="page-header__mobile-wrapper mobile mobile__wrapper">
+            <a href="index.html" class="mobile__logo-link">
+                <img class="mobile__logo-img" src="img/logo-dark.svg" width="42" height="22" alt="Логотип компании">
+            </a>
+            <button class="mobile__close" type="button" aria-label="Закрытие мобильного меню">
+                <svg class="mobile__icon mobile__icon--close visually-hidden" width="15" height="15" role="img">
+                    <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <nav class="mobile__menu">
+                <ul class="mobile__list list-reset">
+                    <li class="mobile__li"><a class="mobile__link" href="#benefits">Преимущества</a></li>
+                    <li class="mobile__li"><a class="mobile__link" href="#directions">Направления</a></li>
+                    <li class="mobile__li"><a class="mobile__link" href="#cruises">Ближайшие круизы</a></li>
+                    <li class="mobile__li"><a class="mobile__link" href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="page-header__burger">
+            <button class="page-header__toggle toggle" type="button" aria-label="Мобильное меню">
+                <svg class="toggle__icon toggle__icon--burger" width="24" height="20" role="img">
+                    <use xlink:href="img/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
+        </div>
     </header>
 
 
@@ -653,15 +669,16 @@
                         </p>
 
                         <form class="booking__form booking-form" action="#" method="post">
-                            <label for="username"></label>
-                            <input type="text" id="username" name="username" placeholder="Имя"
-                                aria-label="Впишите ваше имя." required>
+                            <label for="username" class="booking-form__label">
+                                <input type="text" id="username" name="username" placeholder="Имя"
+                                    aria-label="Впишите ваше имя." required>
+                            </label>
 
-                            <label for="userphone"></label>
-                            <input type="tel" id="userphone" name="userphone" maxlength="17" placeholder="Телефон"
+                            <label for="userphone" class="booking-form__label"></label>
+                            <input type=" tel" id="userphone" name="userphone" maxlength="17" placeholder="Телефон"
                                 aria-label="Впишите ваш номер телефона." required>
 
-                            <label for="usermail"></label>
+                            <label for="usermail" class="booking-form__label"></label>
                             <input type="email" id="usermail" name="usermail" placeholder="Email"
                                 aria-label="Впишите ваш email." required>
 
@@ -729,29 +746,33 @@
 
                 <div class="contacts__text contacts-text">
                     <h3 class="contacts-text__h3 list-reset">
-                        У вас ещё остались вопросы или сомнения?
-                        Приезжайте к нам<br class="contacts-text__tab-br">
+                        У вас ещё остались вопросы или сомнения?<br class="contacts-text__desc-br">
+                        Приезжайте <br class="contacts-text__mob-br">
+                        к нам<br class="contacts-text__tab-br">
                         в офис и мы вам все расскажем.
                     </h3>
 
-                    <svg class="contacts-text__icon contacts-text__icon--pin" width="18" height="22" role="img">
-                        <use xlink:href="img/sprite.svg#pin"></use>
-                    </svg>
-                    <p class="contacts-text__p list-reset">
-                        г. Санкт Петербург,<br> ул. Большая Конюшенная, 19/8
-                    </p>
+                    <div class="contacts-text__address">
+                        <svg class="contacts-text__icon contacts-text__icon--pin" width="18" height="22" role="img">
+                            <use xlink:href="img/sprite.svg#pin"></use>
+                        </svg>
+                        <p class="contacts-text__p list-reset">
+                            г. Санкт Петербург,<br> ул. Большая Конюшенная, 19/8
+                        </p>
+                    </div>
 
-                    <a class="contacts-text__tel" href="tel:88002000000" aria-label="Позвоните нам">
+                    <div class="contacts-text__contacts">
                         <svg class="contacts-text__icon contacts-text__icon--phone" width="18" height="18" role="img">
                             <use xlink:href="img/sprite.svg#tel"></use>
                         </svg>
-                        <p class="contacts-text__p">
-                            8-800-200-00-00
-                        </p>
-                    </a>
+                        <a class="contacts-text__tel" href="tel:88002000000" aria-label="Позвоните нам">
+                            <p class="contacts-text__p">
+                                8-800-200-00-00
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
-
         </section>
 
     </main>
@@ -795,7 +816,7 @@
             </section>
         </div>
     </footer>
-
+    <script src="/js/main.js" type="module"></script>
 
 </body>
 

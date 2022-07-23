@@ -11,11 +11,12 @@ $grey-50: #f9fbfd;
 $blue-50: #e3ecf6;
 $blue-800: #2770b4;
 $blue-900: #011c40;
+$blue-890-transparent-50: rgba(0, 43, 102, 0.5);
 $blue-900-transparent-70: rgba(1, 28, 64, 0.7);
 
 //viewports
 
-$desktop-width: 1023px; //Появляется белая полоска на всю ширину страницы, что-то не так с этой переменной
+$desktop-width: 1023px;
 $tablet-width: 767px;
 
 $retina-dppx: 1.5dppx;

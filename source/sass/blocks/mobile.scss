@@ -1,0 +1,44 @@
+.mobile {
+    display: none;
+
+    @media (max-width: $tablet-width) {
+        display: block;
+        background-image: linear-gradient(to right, $blue-890-transparent-50 10%, $grey-50 10%, $grey-50 100%);
+        margin-top: -20px;
+        padding: 20px 31px;
+        min-height: 570px;
+        position: absolute;
+        right: 0;
+        width: 100%;
+    }
+}
+
+.mobile__logo-img {
+    margin-left: 15px;
+}
+
+.mobile__menu {
+    margin-left: 25px;
+    margin-top: 43px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.mobile__li {
+    margin-bottom: 28px;
+}
+
+.mobile__close {
+    border: none;
+    background-color: transparent;
+}
+
+.mobile__icon {
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+}

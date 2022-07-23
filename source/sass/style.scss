@@ -5,7 +5,6 @@
 @import "fonts.scss";
 
 //Blocks
-@import "blocks/visually-hidden.scss";
 @import "blocks/list-reset.scss";
 @import "blocks/page-body.scss";
 @import "blocks/page-header.scss";
@@ -28,3 +27,6 @@
 @import "blocks/contacts-map.scss";
 @import "blocks/contacts-text.scss";
 @import "blocks/toggle.scss";
+@import "blocks/mobile.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/shown.scss";

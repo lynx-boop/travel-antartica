@@ -33,13 +33,13 @@ const html = () => gulp.src('source/*.html')
 // Scripts
 
 const mainScript = () => gulp.src('source/js/main.js')
-    .pipe(terser())
-    .pipe(rename('main.min.js'))
+    // .pipe(terser())
+    .pipe(rename('main.js'))
     .pipe(gulp.dest('build/js'));
 
 const vendorScript = () => gulp.src('source/js/vendor.js')
-    .pipe(terser())
-    .pipe(rename('vendor.min.js'))
+    // .pipe(terser())
+    .pipe(rename('vendor.js'))
     .pipe(gulp.dest('build/js'));
 
 // Images

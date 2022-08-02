@@ -15,6 +15,16 @@
     }
 }
 
+.contacts-text__address {
+    position: relative;
+}
+
+.contacts-text__icon--pin {
+    @media (max-width: $desktop-width) {
+    top: 5px;
+    };
+}
+
 .contacts-text__h3 {
     font-weight: 500;
     font-size: 18px;
